@@ -1,4 +1,5 @@
 from src.path_reader import BASE_PATH_TRAIN
+from src.preprocessing import preprocess_data
 from tqdm import tqdm
 import pandas as pd
 import os
@@ -16,7 +17,9 @@ def train_test_split():
 
     all_df = pd.concat(all_dfs)
 
-    train_df = {key: group for key, group in all_df.query(f"MatchID in {TRAIN_IDX}").groupby("MatchID")}
-    test_df = {key: group for key, group in all_df.query(f"MatchID in {TEST_IDX}").groupby("MatchID")}
+    all_df = preprocess_data(all_df)
+
+    train_df = {key: group.sort_values(by = "Timestamp") for key, group in all_df.query(f"MatchID in {TRAIN_IDX}").groupby("MatchID")}
+    test_df = {key: group.sort_values(by = "Timestamp") for key, group in all_df.query(f"MatchID in {TEST_IDX}").groupby("MatchID")}
 
     return train_df, test_df
