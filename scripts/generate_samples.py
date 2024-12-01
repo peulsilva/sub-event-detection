@@ -47,7 +47,7 @@ model = AutoModelForCausalLM.from_pretrained(
 
 
 # Define train and validation data
-train_indices = [8,11,13]
+train_indices = [17,18,19]
 val_indices = [8, 11, 13]
 
 # Assuming `train_test_split` splits data properly
@@ -57,7 +57,10 @@ train_data, test_data = train_test_split()
 def get_samples(indices, frac=1):
     all_df = []
     for id in indices:
-        temp_df = train_data[id]
+        try:
+            temp_df = train_data[id]
+        except :
+            temp_df= test_data[id]
         all_df.append(temp_df.dropna().sample(frac=frac))
     return pd.concat(all_df)
 
@@ -66,7 +69,7 @@ val_df = get_samples(val_indices)
 
 # Define the base prompt for generation
 base_prompt = '''You are a helpful assistant.
-    I will provide you a tweet that happened during a world cup game and you will return me if this tweet represents a football event such as a goal, half time, kick-off, full time, penalty, red card, yellow card, or
+    I will provide you a tweet that happened during a world cup game and you will return me if this tweet a football event such as a goal, half time, kick-off, full time, penalty, red card, yellow card, or
 own goal—occurred within that period.
 
     Here is the text:
@@ -127,6 +130,6 @@ for i, (idx, row) in tqdm(enumerate(train_df.sample(frac=1, replace=False).iterr
         ''')
 
     if i % save_every == 0:
-        pd.DataFrame(generated_samples).to_csv("data/real_labels.csv")
+        pd.DataFrame(generated_samples).to_csv(f"data/real_labels_{train_indices}.csv")
 
-pd.DataFrame(generated_samples).to_csv("data/real_labels_final.csv")
+pd.DataFrame(generated_samples).to_csv(f"data/real_labels_final_{train_indices}.csv")
