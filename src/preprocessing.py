@@ -21,7 +21,7 @@ class TextDataset(Dataset):
         else:
             label = self.labels[idx]
         encoding = self.tokenizer(
-            text, max_length=self.max_length, padding="max_length", truncation=True, return_tensors="pt"
+            text, max_length=self.max_length, padding="longest", truncation=True, return_tensors="pt"
         )
 
         # encoding = self.tokenizer(

@@ -72,14 +72,13 @@ def evaluate_model(
     val_dataloader, 
     model, device : str = 'cuda', 
     use_labels = True, 
-    sample_weight = None,
     extra_feature : bool = False,
     return_proba  =False
 ):
     model.eval()
     all_preds = []
     all_labels = []
-    probas = []
+    all_probas = []
     with torch.no_grad():
         with torch.autocast(device_type = 'cuda'):
             for i,batch in tqdm(enumerate(val_dataloader), total = len(val_dataloader)):
@@ -89,7 +88,7 @@ def evaluate_model(
 
                 labels = None
                 if  use_labels:
-                    labels = batch["label"].to(device)
+                    labels = batch["labels"].to(device)
                 # count = batch['count'].to(device).unsqueeze(dim = -1)
 
                 if extra_feature:
@@ -100,7 +99,7 @@ def evaluate_model(
                     preds = torch.argmax(outputs.logits, dim=1)
                     probas = torch.softmax(outputs.logits, dim = 1)[:,1]
                     
-
+                all_probas.extend(probas.cpu().numpy())
                 all_preds.extend(preds.cpu().numpy())
                 if use_labels:
                     all_labels.extend(labels.cpu().numpy())
@@ -135,7 +134,7 @@ def compute_class_weights(labels):
     class_weights = compute_class_weight(class_weight="balanced", classes=np.unique(labels), y=labels)
     return torch.tensor(class_weights, dtype=torch.float)
 
-def get_first_texts(x, max_size = 100):
+def get_first_texts(x, max_size = 100, num_texts = 50):
     size = x.apply(lambda x: len(x.split(" ")))\
         .sort_values()
     
@@ -143,7 +142,7 @@ def get_first_texts(x, max_size = 100):
     mask = size < max_size
     # mask = x.str.lower().str.contains("goal")
 
-    return "\n".join(x[mask])
+    return "\n".join(x[mask].iloc[0:num_texts])
     # return x[mask].tolist()
 
 def aggregate_samples(df, indices, max_size : int = 100):
@@ -185,3 +184,51 @@ def remove_hashtag_links(df):
     # df['Tweet'] = "Is there any event like goal, halftime, fulltime, start of match or cards in any of the following tweets?\n\n" + df['Tweet']
 
     return df
+
+def validate_pet_model(model, val_dataloader, tokenizer, allowed_tokens ):
+    model.eval()
+    val_loss = 0
+    total_preds = []
+    total_labels = []
+
+    with torch.no_grad():
+        for batch in tqdm(val_dataloader, desc="Validation"):
+            input_ids = batch["input_ids"].to("cuda")
+            attention_mask = batch["attention_mask"].to("cuda")
+            labels = batch["labels"].to("cuda")
+
+            # Forward pass
+
+            with torch.autocast( device_type = 'cuda'):
+                outputs = model(input_ids=input_ids, attention_mask=attention_mask)
+                logits = outputs.logits  # Shape: (batch_size, seq_len, vocab_size)
+
+                # Create a mask to identify `[MASK]` positions
+                mask_positions = (input_ids == tokenizer.mask_token_id)
+
+                # Extract logits for `[MASK]` positions only
+                masked_logits = logits[mask_positions]  # Shape: (num_masks, vocab_size)
+
+                # Filter logits to include only "yes" and "no"
+                allowed_logits = masked_logits[:, allowed_tokens]  # Shape: (num_masks, len(allowed_tokens))
+
+                # Create the corresponding target labels (mapped to indices in allowed_tokens)
+                target_labels = labels[mask_positions]
+                remapped_labels = torch.zeros_like(target_labels)
+                for i, token_id in enumerate(allowed_tokens):
+                    remapped_labels[target_labels == token_id] = i
+
+            # Compute loss
+
+            # Store predictions and labels for evaluation
+            preds = torch.argmax(allowed_logits, dim=-1)
+            total_preds.extend(preds.cpu().tolist())
+            total_labels.extend(remapped_labels.cpu().tolist())
+
+    # Calculate metrics
+    accuracy = accuracy_score(total_labels, total_preds)
+    cnf = confusion_matrix(total_labels, total_preds)
+    print(f"Accuracy: {accuracy:.4f}")
+    print(cnf)
+
+    return total_preds, total_labels
