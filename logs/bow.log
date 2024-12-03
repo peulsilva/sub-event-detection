@@ -1,0 +1,565 @@
+2024-12-03 15:27:57,434 - __main__ - INFO - F
+2024-12-03 15:34:41,502 - __main__ - INFO - 
+
+Using Classifier LogisticRegression()
+2024-12-03 15:35:25,228 - __main__ - INFO - 
+
+Using Classifier LogisticRegression()
+2024-12-03 15:36:31,540 - __main__ - INFO - 
+
+Using Classifier LogisticRegression()
+2024-12-03 15:36:37,210 - __main__ - INFO - Fold 0 - Validation indices = [1, 2, 5, 12]
+2024-12-03 15:36:37,215 - __main__ - INFO - Accuracy = 0.5852156057494866
+2024-12-03 15:36:41,756 - __main__ - INFO - Fold 1 - Validation indices = [2, 7, 12, 13]
+2024-12-03 15:36:41,758 - __main__ - INFO - Accuracy = 0.6078028747433265
+2024-12-03 15:36:45,006 - __main__ - INFO - Fold 2 - Validation indices = [11, 12, 18, 19]
+2024-12-03 15:36:45,007 - __main__ - INFO - Accuracy = 0.5728952772073922
+2024-12-03 15:36:48,306 - __main__ - INFO - Fold 3 - Validation indices = [2, 11, 13, 18]
+2024-12-03 15:36:48,308 - __main__ - INFO - Accuracy = 0.5865384615384616
+2024-12-03 15:36:51,446 - __main__ - INFO - Fold 4 - Validation indices = [1, 7, 13, 18]
+2024-12-03 15:36:51,449 - __main__ - INFO - Accuracy = 0.5461538461538461
+2024-12-03 15:36:55,030 - __main__ - INFO - Fold 5 - Validation indices = [2, 11, 12, 19]
+2024-12-03 15:36:55,032 - __main__ - INFO - Accuracy = 0.5523613963039015
+2024-12-03 15:36:58,350 - __main__ - INFO - Fold 6 - Validation indices = [2, 7, 13, 19]
+2024-12-03 15:36:58,353 - __main__ - INFO - Accuracy = 0.5980769230769231
+2024-12-03 15:37:01,843 - __main__ - INFO - Fold 7 - Validation indices = [2, 11, 12, 13]
+2024-12-03 15:37:01,844 - __main__ - INFO - Accuracy = 0.5749486652977412
+2024-12-03 15:37:05,290 - __main__ - INFO - Fold 8 - Validation indices = [5, 7, 13, 19]
+2024-12-03 15:37:05,292 - __main__ - INFO - Accuracy = 0.5557692307692308
+2024-12-03 15:37:08,986 - __main__ - INFO - Fold 9 - Validation indices = [0, 1, 2, 12]
+2024-12-03 15:37:08,988 - __main__ - INFO - Accuracy = 0.5975359342915811
+2024-12-03 15:37:08,991 - __main__ - INFO - Mean Accuracy for LogisticRegression():  0.5777298215131891
+2024-12-03 15:37:08,992 - __main__ - INFO - 
+
+Using Classifier RandomForestClassifier()
+2024-12-03 15:37:12,975 - __main__ - INFO - Fold 0 - Validation indices = [1, 2, 5, 12]
+2024-12-03 15:37:12,976 - __main__ - INFO - Accuracy = 0.6344969199178645
+2024-12-03 15:37:16,933 - __main__ - INFO - Fold 1 - Validation indices = [2, 7, 12, 13]
+2024-12-03 15:37:16,935 - __main__ - INFO - Accuracy = 0.6529774127310062
+2024-12-03 15:37:21,090 - __main__ - INFO - Fold 2 - Validation indices = [11, 12, 18, 19]
+2024-12-03 15:37:21,092 - __main__ - INFO - Accuracy = 0.5852156057494866
+2024-12-03 15:37:25,664 - __main__ - INFO - Fold 3 - Validation indices = [2, 11, 13, 18]
+2024-12-03 15:37:25,667 - __main__ - INFO - Accuracy = 0.6076923076923076
+2024-12-03 15:37:30,295 - __main__ - INFO - Fold 4 - Validation indices = [1, 7, 13, 18]
+2024-12-03 15:37:30,297 - __main__ - INFO - Accuracy = 0.5673076923076923
+2024-12-03 15:37:34,282 - __main__ - INFO - Fold 5 - Validation indices = [2, 11, 12, 19]
+2024-12-03 15:37:34,283 - __main__ - INFO - Accuracy = 0.5749486652977412
+2024-12-03 15:37:37,657 - __main__ - INFO - Fold 6 - Validation indices = [2, 7, 13, 19]
+2024-12-03 15:37:37,659 - __main__ - INFO - Accuracy = 0.6307692307692307
+2024-12-03 15:37:41,109 - __main__ - INFO - Fold 7 - Validation indices = [2, 11, 12, 13]
+2024-12-03 15:37:41,111 - __main__ - INFO - Accuracy = 0.6365503080082136
+2024-12-03 15:37:44,674 - __main__ - INFO - Fold 8 - Validation indices = [5, 7, 13, 19]
+2024-12-03 15:37:44,675 - __main__ - INFO - Accuracy = 0.6153846153846154
+2024-12-03 15:37:48,034 - __main__ - INFO - Fold 9 - Validation indices = [0, 1, 2, 12]
+2024-12-03 15:37:48,035 - __main__ - INFO - Accuracy = 0.5687885010266941
+2024-12-03 15:37:48,038 - __main__ - INFO - Mean Accuracy for RandomForestClassifier():  0.6074131258884852
+2024-12-03 15:37:48,040 - __main__ - INFO - 
+
+Using Classifier RandomForestClassifier(max_depth=5)
+2024-12-03 15:37:51,427 - __main__ - INFO - Fold 0 - Validation indices = [1, 2, 5, 12]
+2024-12-03 15:37:51,428 - __main__ - INFO - Accuracy = 0.6016427104722792
+2024-12-03 15:37:54,841 - __main__ - INFO - Fold 1 - Validation indices = [2, 7, 12, 13]
+2024-12-03 15:37:54,843 - __main__ - INFO - Accuracy = 0.6078028747433265
+2024-12-03 15:37:58,164 - __main__ - INFO - Fold 2 - Validation indices = [11, 12, 18, 19]
+2024-12-03 15:37:58,166 - __main__ - INFO - Accuracy = 0.5770020533880903
+2024-12-03 15:38:01,619 - __main__ - INFO - Fold 3 - Validation indices = [2, 11, 13, 18]
+2024-12-03 15:38:01,620 - __main__ - INFO - Accuracy = 0.6596153846153846
+2024-12-03 15:38:05,232 - __main__ - INFO - Fold 4 - Validation indices = [1, 7, 13, 18]
+2024-12-03 15:38:05,233 - __main__ - INFO - Accuracy = 0.5807692307692308
+2024-12-03 15:38:09,530 - __main__ - INFO - Fold 5 - Validation indices = [2, 11, 12, 19]
+2024-12-03 15:38:09,533 - __main__ - INFO - Accuracy = 0.5811088295687885
+2024-12-03 15:38:14,317 - __main__ - INFO - Fold 6 - Validation indices = [2, 7, 13, 19]
+2024-12-03 15:38:14,319 - __main__ - INFO - Accuracy = 0.6269230769230769
+2024-12-03 15:38:18,772 - __main__ - INFO - Fold 7 - Validation indices = [2, 11, 12, 13]
+2024-12-03 15:38:18,774 - __main__ - INFO - Accuracy = 0.6139630390143738
+2024-12-03 15:38:23,292 - __main__ - INFO - Fold 8 - Validation indices = [5, 7, 13, 19]
+2024-12-03 15:38:23,293 - __main__ - INFO - Accuracy = 0.5634615384615385
+2024-12-03 15:38:28,893 - __main__ - INFO - Fold 9 - Validation indices = [0, 1, 2, 12]
+2024-12-03 15:38:28,895 - __main__ - INFO - Accuracy = 0.5872689938398358
+2024-12-03 15:38:28,902 - __main__ - INFO - Mean Accuracy for RandomForestClassifier(max_depth=5):  0.5999557731795926
+2024-12-03 15:38:28,904 - __main__ - INFO - 
+
+Using Classifier DecisionTreeClassifier()
+2024-12-03 15:38:33,783 - __main__ - INFO - Fold 0 - Validation indices = [1, 2, 5, 12]
+2024-12-03 15:38:33,785 - __main__ - INFO - Accuracy = 0.5420944558521561
+2024-12-03 15:38:37,673 - __main__ - INFO - Fold 1 - Validation indices = [2, 7, 12, 13]
+2024-12-03 15:38:37,675 - __main__ - INFO - Accuracy = 0.6016427104722792
+2024-12-03 15:38:40,898 - __main__ - INFO - Fold 2 - Validation indices = [11, 12, 18, 19]
+2024-12-03 15:38:40,900 - __main__ - INFO - Accuracy = 0.5462012320328542
+2024-12-03 15:38:44,039 - __main__ - INFO - Fold 3 - Validation indices = [2, 11, 13, 18]
+2024-12-03 15:38:44,040 - __main__ - INFO - Accuracy = 0.5673076923076923
+2024-12-03 15:38:47,185 - __main__ - INFO - Fold 4 - Validation indices = [1, 7, 13, 18]
+2024-12-03 15:38:47,186 - __main__ - INFO - Accuracy = 0.5192307692307693
+2024-12-03 15:38:50,269 - __main__ - INFO - Fold 5 - Validation indices = [2, 11, 12, 19]
+2024-12-03 15:38:50,271 - __main__ - INFO - Accuracy = 0.5462012320328542
+2024-12-03 15:38:53,504 - __main__ - INFO - Fold 6 - Validation indices = [2, 7, 13, 19]
+2024-12-03 15:38:53,506 - __main__ - INFO - Accuracy = 0.5884615384615385
+2024-12-03 15:38:56,766 - __main__ - INFO - Fold 7 - Validation indices = [2, 11, 12, 13]
+2024-12-03 15:38:56,768 - __main__ - INFO - Accuracy = 0.5708418891170431
+2024-12-03 15:38:59,838 - __main__ - INFO - Fold 8 - Validation indices = [5, 7, 13, 19]
+2024-12-03 15:38:59,839 - __main__ - INFO - Accuracy = 0.5884615384615385
+2024-12-03 15:39:03,106 - __main__ - INFO - Fold 9 - Validation indices = [0, 1, 2, 12]
+2024-12-03 15:39:03,107 - __main__ - INFO - Accuracy = 0.5359342915811088
+2024-12-03 15:39:03,110 - __main__ - INFO - Mean Accuracy for DecisionTreeClassifier():  0.5606377349549834
+2024-12-03 15:39:03,111 - __main__ - INFO - 
+
+Using Classifier MLPClassifier()
+2024-12-03 15:39:08,099 - __main__ - INFO - Fold 0 - Validation indices = [1, 2, 5, 12]
+2024-12-03 15:39:08,102 - __main__ - INFO - Accuracy = 0.62217659137577
+2024-12-03 15:39:13,424 - __main__ - INFO - Fold 1 - Validation indices = [2, 7, 12, 13]
+2024-12-03 15:39:13,428 - __main__ - INFO - Accuracy = 0.5872689938398358
+2024-12-03 15:39:18,397 - __main__ - INFO - Fold 2 - Validation indices = [11, 12, 18, 19]
+2024-12-03 15:39:18,401 - __main__ - INFO - Accuracy = 0.5503080082135524
+2024-12-03 15:39:23,361 - __main__ - INFO - Fold 3 - Validation indices = [2, 11, 13, 18]
+2024-12-03 15:39:23,363 - __main__ - INFO - Accuracy = 0.5769230769230769
+2024-12-03 15:39:28,442 - __main__ - INFO - Fold 4 - Validation indices = [1, 7, 13, 18]
+2024-12-03 15:39:28,444 - __main__ - INFO - Accuracy = 0.551923076923077
+2024-12-03 15:39:33,462 - __main__ - INFO - Fold 5 - Validation indices = [2, 11, 12, 19]
+2024-12-03 15:39:33,465 - __main__ - INFO - Accuracy = 0.5687885010266941
+2024-12-03 15:39:38,581 - __main__ - INFO - Fold 6 - Validation indices = [2, 7, 13, 19]
+2024-12-03 15:39:38,583 - __main__ - INFO - Accuracy = 0.5980769230769231
+2024-12-03 15:39:43,604 - __main__ - INFO - Fold 7 - Validation indices = [2, 11, 12, 13]
+2024-12-03 15:39:43,607 - __main__ - INFO - Accuracy = 0.5872689938398358
+2024-12-03 15:39:48,605 - __main__ - INFO - Fold 8 - Validation indices = [5, 7, 13, 19]
+2024-12-03 15:39:48,607 - __main__ - INFO - Accuracy = 0.5903846153846154
+2024-12-03 15:39:53,633 - __main__ - INFO - Fold 9 - Validation indices = [0, 1, 2, 12]
+2024-12-03 15:39:53,636 - __main__ - INFO - Accuracy = 0.6057494866529775
+2024-12-03 15:39:53,642 - __main__ - INFO - Mean Accuracy for MLPClassifier():  0.5838868267256359
+2024-12-03 15:40:53,853 - __main__ - INFO - 
+
+Using Classifier LogisticRegression()
+2024-12-03 15:41:13,444 - __main__ - INFO - 
+
+Using Classifier LogisticRegression()
+2024-12-03 15:41:17,913 - __main__ - INFO - Fold 0 - Validation indices = [12, 13, 18, 19]
+2024-12-03 15:41:17,914 - __main__ - INFO - Accuracy = 0.6057494866529775
+2024-12-03 15:41:21,821 - __main__ - INFO - Fold 1 - Validation indices = [0, 2, 5, 12]
+2024-12-03 15:41:21,822 - __main__ - INFO - Accuracy = 0.6262833675564682
+2024-12-03 15:41:26,003 - __main__ - INFO - Fold 2 - Validation indices = [2, 11, 13, 19]
+2024-12-03 15:41:26,005 - __main__ - INFO - Accuracy = 0.6538461538461539
+2024-12-03 15:41:30,537 - __main__ - INFO - Fold 3 - Validation indices = [0, 11, 12, 18]
+2024-12-03 15:41:30,539 - __main__ - INFO - Accuracy = 0.6057494866529775
+2024-12-03 15:41:34,859 - __main__ - INFO - Fold 4 - Validation indices = [0, 1, 2, 13]
+2024-12-03 15:41:34,860 - __main__ - INFO - Accuracy = 0.6346153846153846
+2024-12-03 15:41:39,307 - __main__ - INFO - Fold 5 - Validation indices = [0, 1, 2, 19]
+2024-12-03 15:41:39,308 - __main__ - INFO - Accuracy = 0.6288461538461538
+2024-12-03 15:41:43,603 - __main__ - INFO - Fold 6 - Validation indices = [0, 1, 5, 18]
+2024-12-03 15:41:43,605 - __main__ - INFO - Accuracy = 0.6115384615384616
+2024-12-03 15:41:47,626 - __main__ - INFO - Fold 7 - Validation indices = [0, 5, 12, 13]
+2024-12-03 15:41:47,628 - __main__ - INFO - Accuracy = 0.648870636550308
+2024-12-03 15:41:51,600 - __main__ - INFO - Fold 8 - Validation indices = [1, 7, 12, 18]
+2024-12-03 15:41:51,603 - __main__ - INFO - Accuracy = 0.5995893223819302
+2024-12-03 15:41:55,849 - __main__ - INFO - Fold 9 - Validation indices = [1, 5, 11, 18]
+2024-12-03 15:41:55,853 - __main__ - INFO - Accuracy = 0.6019230769230769
+2024-12-03 15:41:55,857 - __main__ - INFO - Mean Accuracy for LogisticRegression():  0.6217011530563892
+2024-12-03 15:41:55,858 - __main__ - INFO - 
+
+Using Classifier RandomForestClassifier()
+2024-12-03 15:42:00,506 - __main__ - INFO - Fold 0 - Validation indices = [12, 13, 18, 19]
+2024-12-03 15:42:00,507 - __main__ - INFO - Accuracy = 0.6652977412731006
+2024-12-03 15:42:05,189 - __main__ - INFO - Fold 1 - Validation indices = [0, 2, 5, 12]
+2024-12-03 15:42:05,191 - __main__ - INFO - Accuracy = 0.6098562628336756
+2024-12-03 15:42:09,879 - __main__ - INFO - Fold 2 - Validation indices = [2, 11, 13, 19]
+2024-12-03 15:42:09,880 - __main__ - INFO - Accuracy = 0.6557692307692308
+2024-12-03 15:42:14,757 - __main__ - INFO - Fold 3 - Validation indices = [0, 11, 12, 18]
+2024-12-03 15:42:14,758 - __main__ - INFO - Accuracy = 0.6324435318275154
+2024-12-03 15:42:19,219 - __main__ - INFO - Fold 4 - Validation indices = [0, 1, 2, 13]
+2024-12-03 15:42:19,222 - __main__ - INFO - Accuracy = 0.6403846153846153
+2024-12-03 15:42:23,997 - __main__ - INFO - Fold 5 - Validation indices = [0, 1, 2, 19]
+2024-12-03 15:42:24,000 - __main__ - INFO - Accuracy = 0.6192307692307693
+2024-12-03 15:42:28,778 - __main__ - INFO - Fold 6 - Validation indices = [0, 1, 5, 18]
+2024-12-03 15:42:28,779 - __main__ - INFO - Accuracy = 0.6403846153846153
+2024-12-03 15:42:33,629 - __main__ - INFO - Fold 7 - Validation indices = [0, 5, 12, 13]
+2024-12-03 15:42:33,631 - __main__ - INFO - Accuracy = 0.6057494866529775
+2024-12-03 15:42:38,607 - __main__ - INFO - Fold 8 - Validation indices = [1, 7, 12, 18]
+2024-12-03 15:42:38,608 - __main__ - INFO - Accuracy = 0.6139630390143738
+2024-12-03 15:42:43,440 - __main__ - INFO - Fold 9 - Validation indices = [1, 5, 11, 18]
+2024-12-03 15:42:43,442 - __main__ - INFO - Accuracy = 0.5923076923076923
+2024-12-03 15:42:43,445 - __main__ - INFO - Mean Accuracy for RandomForestClassifier():  0.6275386984678566
+2024-12-03 15:42:43,446 - __main__ - INFO - 
+
+Using Classifier RandomForestClassifier(max_depth=5)
+2024-12-03 15:42:48,087 - __main__ - INFO - Fold 0 - Validation indices = [12, 13, 18, 19]
+2024-12-03 15:42:48,089 - __main__ - INFO - Accuracy = 0.6714579055441479
+2024-12-03 15:42:52,485 - __main__ - INFO - Fold 1 - Validation indices = [0, 2, 5, 12]
+2024-12-03 15:42:52,488 - __main__ - INFO - Accuracy = 0.6447638603696099
+2024-12-03 15:42:57,104 - __main__ - INFO - Fold 2 - Validation indices = [2, 11, 13, 19]
+2024-12-03 15:42:57,106 - __main__ - INFO - Accuracy = 0.6673076923076923
+2024-12-03 15:43:01,872 - __main__ - INFO - Fold 3 - Validation indices = [0, 11, 12, 18]
+2024-12-03 15:43:01,874 - __main__ - INFO - Accuracy = 0.6098562628336756
+2024-12-03 15:43:06,564 - __main__ - INFO - Fold 4 - Validation indices = [0, 1, 2, 13]
+2024-12-03 15:43:06,566 - __main__ - INFO - Accuracy = 0.6211538461538462
+2024-12-03 15:43:11,374 - __main__ - INFO - Fold 5 - Validation indices = [0, 1, 2, 19]
+2024-12-03 15:43:11,375 - __main__ - INFO - Accuracy = 0.6057692307692307
+2024-12-03 15:43:16,102 - __main__ - INFO - Fold 6 - Validation indices = [0, 1, 5, 18]
+2024-12-03 15:43:16,104 - __main__ - INFO - Accuracy = 0.6153846153846154
+2024-12-03 15:43:20,488 - __main__ - INFO - Fold 7 - Validation indices = [0, 5, 12, 13]
+2024-12-03 15:43:20,490 - __main__ - INFO - Accuracy = 0.62217659137577
+2024-12-03 15:43:25,154 - __main__ - INFO - Fold 8 - Validation indices = [1, 7, 12, 18]
+2024-12-03 15:43:25,157 - __main__ - INFO - Accuracy = 0.5954825462012321
+2024-12-03 15:43:29,755 - __main__ - INFO - Fold 9 - Validation indices = [1, 5, 11, 18]
+2024-12-03 15:43:29,757 - __main__ - INFO - Accuracy = 0.6115384615384616
+2024-12-03 15:43:29,761 - __main__ - INFO - Mean Accuracy for RandomForestClassifier(max_depth=5):  0.6264891012478282
+2024-12-03 15:43:29,762 - __main__ - INFO - 
+
+Using Classifier DecisionTreeClassifier()
+2024-12-03 15:43:34,228 - __main__ - INFO - Fold 0 - Validation indices = [12, 13, 18, 19]
+2024-12-03 15:43:34,230 - __main__ - INFO - Accuracy = 0.5523613963039015
+2024-12-03 15:43:38,637 - __main__ - INFO - Fold 1 - Validation indices = [0, 2, 5, 12]
+2024-12-03 15:43:38,639 - __main__ - INFO - Accuracy = 0.5790554414784395
+2024-12-03 15:43:43,053 - __main__ - INFO - Fold 2 - Validation indices = [2, 11, 13, 19]
+2024-12-03 15:43:43,056 - __main__ - INFO - Accuracy = 0.5903846153846154
+2024-12-03 15:43:47,494 - __main__ - INFO - Fold 3 - Validation indices = [0, 11, 12, 18]
+2024-12-03 15:43:47,495 - __main__ - INFO - Accuracy = 0.5523613963039015
+2024-12-03 15:43:51,725 - __main__ - INFO - Fold 4 - Validation indices = [0, 1, 2, 13]
+2024-12-03 15:43:51,726 - __main__ - INFO - Accuracy = 0.6096153846153847
+2024-12-03 15:43:56,275 - __main__ - INFO - Fold 5 - Validation indices = [0, 1, 2, 19]
+2024-12-03 15:43:56,277 - __main__ - INFO - Accuracy = 0.5884615384615385
+2024-12-03 15:44:00,738 - __main__ - INFO - Fold 6 - Validation indices = [0, 1, 5, 18]
+2024-12-03 15:44:00,740 - __main__ - INFO - Accuracy = 0.5634615384615385
+2024-12-03 15:44:05,282 - __main__ - INFO - Fold 7 - Validation indices = [0, 5, 12, 13]
+2024-12-03 15:44:05,285 - __main__ - INFO - Accuracy = 0.5646817248459959
+2024-12-03 15:44:09,716 - __main__ - INFO - Fold 8 - Validation indices = [1, 7, 12, 18]
+2024-12-03 15:44:09,719 - __main__ - INFO - Accuracy = 0.5523613963039015
+2024-12-03 15:44:14,114 - __main__ - INFO - Fold 9 - Validation indices = [1, 5, 11, 18]
+2024-12-03 15:44:14,115 - __main__ - INFO - Accuracy = 0.5173076923076924
+2024-12-03 15:44:14,121 - __main__ - INFO - Mean Accuracy for DecisionTreeClassifier():  0.5670052124466909
+2024-12-03 15:44:14,123 - __main__ - INFO - 
+
+Using Classifier MLPClassifier()
+2024-12-03 15:44:21,620 - __main__ - INFO - Fold 0 - Validation indices = [12, 13, 18, 19]
+2024-12-03 15:44:21,623 - __main__ - INFO - Accuracy = 0.5811088295687885
+2024-12-03 15:44:29,098 - __main__ - INFO - Fold 1 - Validation indices = [0, 2, 5, 12]
+2024-12-03 15:44:29,101 - __main__ - INFO - Accuracy = 0.6160164271047228
+2024-12-03 15:44:36,681 - __main__ - INFO - Fold 2 - Validation indices = [2, 11, 13, 19]
+2024-12-03 15:44:36,683 - __main__ - INFO - Accuracy = 0.625
+2024-12-03 15:44:44,899 - __main__ - INFO - Fold 3 - Validation indices = [0, 11, 12, 18]
+2024-12-03 15:44:44,902 - __main__ - INFO - Accuracy = 0.5811088295687885
+2024-12-03 15:44:52,184 - __main__ - INFO - Fold 4 - Validation indices = [0, 1, 2, 13]
+2024-12-03 15:44:52,189 - __main__ - INFO - Accuracy = 0.6192307692307693
+2024-12-03 15:44:59,941 - __main__ - INFO - Fold 5 - Validation indices = [0, 1, 2, 19]
+2024-12-03 15:44:59,968 - __main__ - INFO - Accuracy = 0.5961538461538461
+2024-12-03 15:45:07,375 - __main__ - INFO - Fold 6 - Validation indices = [0, 1, 5, 18]
+2024-12-03 15:45:07,380 - __main__ - INFO - Accuracy = 0.5826923076923077
+2024-12-03 15:45:15,400 - __main__ - INFO - Fold 7 - Validation indices = [0, 5, 12, 13]
+2024-12-03 15:45:15,403 - __main__ - INFO - Accuracy = 0.5811088295687885
+2024-12-03 15:45:22,732 - __main__ - INFO - Fold 8 - Validation indices = [1, 7, 12, 18]
+2024-12-03 15:45:22,738 - __main__ - INFO - Accuracy = 0.5975359342915811
+2024-12-03 15:45:30,244 - __main__ - INFO - Fold 9 - Validation indices = [1, 5, 11, 18]
+2024-12-03 15:45:30,249 - __main__ - INFO - Accuracy = 0.6096153846153847
+2024-12-03 15:45:30,258 - __main__ - INFO - Mean Accuracy for MLPClassifier():  0.5989571157794977
+2024-12-03 15:58:31,072 - __main__ - INFO - 
+
+Using Classifier LogisticRegression()
+2024-12-03 16:00:03,583 - __main__ - INFO - 
+
+Using Classifier LogisticRegression()
+2024-12-03 16:00:20,266 - __main__ - INFO - 
+
+Using Classifier LogisticRegression()
+2024-12-03 16:04:08,545 - __main__ - INFO - 
+
+Using Classifier LogisticRegression()
+2024-12-03 16:04:12,082 - __main__ - INFO - Fold 0 - Validation indices = [2, 7, 13, 19]
+2024-12-03 16:04:12,083 - __main__ - INFO - Accuracy = 0.6076923076923076
+2024-12-03 16:04:14,633 - __main__ - INFO - Fold 1 - Validation indices = [0, 2, 7, 19]
+2024-12-03 16:04:14,636 - __main__ - INFO - Accuracy = 0.6038461538461538
+2024-12-03 16:04:17,081 - __main__ - INFO - Fold 2 - Validation indices = [0, 1, 2, 18]
+2024-12-03 16:04:17,082 - __main__ - INFO - Accuracy = 0.575
+2024-12-03 16:04:19,388 - __main__ - INFO - Fold 3 - Validation indices = [5, 12, 18, 19]
+2024-12-03 16:04:19,390 - __main__ - INFO - Accuracy = 0.6180698151950719
+2024-12-03 16:04:22,315 - __main__ - INFO - Fold 4 - Validation indices = [1, 13, 18, 19]
+2024-12-03 16:04:22,317 - __main__ - INFO - Accuracy = 0.573076923076923
+2024-12-03 16:04:25,123 - __main__ - INFO - Fold 5 - Validation indices = [1, 7, 11, 12]
+2024-12-03 16:04:25,125 - __main__ - INFO - Accuracy = 0.5626283367556468
+2024-12-03 16:04:28,281 - __main__ - INFO - Fold 6 - Validation indices = [2, 5, 11, 12]
+2024-12-03 16:04:28,283 - __main__ - INFO - Accuracy = 0.6036960985626283
+2024-12-03 16:04:31,292 - __main__ - INFO - Fold 7 - Validation indices = [0, 5, 11, 19]
+2024-12-03 16:04:31,294 - __main__ - INFO - Accuracy = 0.551923076923077
+2024-12-03 16:04:34,276 - __main__ - INFO - Fold 8 - Validation indices = [0, 2, 13, 19]
+2024-12-03 16:04:34,279 - __main__ - INFO - Accuracy = 0.625
+2024-12-03 16:04:37,159 - __main__ - INFO - Fold 9 - Validation indices = [7, 11, 18, 19]
+2024-12-03 16:04:37,162 - __main__ - INFO - Accuracy = 0.5865384615384616
+2024-12-03 16:04:37,167 - __main__ - INFO - Mean Accuracy for LogisticRegression():  0.5907471173590271
+2024-12-03 16:04:37,169 - __main__ - INFO - 
+
+Using Classifier RandomForestClassifier()
+2024-12-03 16:04:47,329 - __main__ - INFO - 
+
+Using Classifier LogisticRegression()
+2024-12-03 16:04:50,205 - __main__ - INFO - Fold 0 - Validation indices = [0, 11, 13, 19]
+2024-12-03 16:04:50,207 - __main__ - INFO - Accuracy = 0.5576923076923077
+2024-12-03 16:04:54,032 - __main__ - INFO - Fold 1 - Validation indices = [2, 5, 18, 19]
+2024-12-03 16:04:54,034 - __main__ - INFO - Accuracy = 0.6057692307692307
+2024-12-03 16:04:57,039 - __main__ - INFO - Fold 2 - Validation indices = [2, 7, 18, 19]
+2024-12-03 16:04:57,040 - __main__ - INFO - Accuracy = 0.6076923076923076
+2024-12-03 16:04:59,906 - __main__ - INFO - Fold 3 - Validation indices = [0, 5, 11, 12]
+2024-12-03 16:04:59,907 - __main__ - INFO - Accuracy = 0.5420944558521561
+2024-12-03 16:05:02,247 - __main__ - INFO - Fold 4 - Validation indices = [0, 2, 5, 11]
+2024-12-03 16:05:02,249 - __main__ - INFO - Accuracy = 0.5557692307692308
+2024-12-03 16:05:04,663 - __main__ - INFO - Fold 5 - Validation indices = [2, 7, 12, 13]
+2024-12-03 16:05:04,669 - __main__ - INFO - Accuracy = 0.6180698151950719
+2024-12-03 16:05:07,701 - __main__ - INFO - Fold 6 - Validation indices = [7, 11, 12, 18]
+2024-12-03 16:05:07,703 - __main__ - INFO - Accuracy = 0.5564681724845996
+2024-12-03 16:05:10,704 - __main__ - INFO - Fold 7 - Validation indices = [2, 11, 12, 19]
+2024-12-03 16:05:10,705 - __main__ - INFO - Accuracy = 0.5872689938398358
+2024-12-03 16:05:13,568 - __main__ - INFO - Fold 8 - Validation indices = [0, 7, 13, 19]
+2024-12-03 16:05:13,569 - __main__ - INFO - Accuracy = 0.6
+2024-12-03 16:05:16,481 - __main__ - INFO - Fold 9 - Validation indices = [0, 2, 5, 18]
+2024-12-03 16:05:16,483 - __main__ - INFO - Accuracy = 0.5711538461538461
+2024-12-03 16:05:16,486 - __main__ - INFO - Mean Accuracy for LogisticRegression():  0.5801978360448586
+2024-12-03 16:05:16,487 - __main__ - INFO - 
+
+Using Classifier RandomForestClassifier()
+2024-12-03 16:05:19,440 - __main__ - INFO - Fold 0 - Validation indices = [0, 11, 13, 19]
+2024-12-03 16:05:19,442 - __main__ - INFO - Accuracy = 0.5442307692307692
+2024-12-03 16:05:22,500 - __main__ - INFO - Fold 1 - Validation indices = [2, 5, 18, 19]
+2024-12-03 16:05:22,502 - __main__ - INFO - Accuracy = 0.6153846153846154
+2024-12-03 16:05:25,787 - __main__ - INFO - Fold 2 - Validation indices = [2, 7, 18, 19]
+2024-12-03 16:05:25,789 - __main__ - INFO - Accuracy = 0.6288461538461538
+2024-12-03 16:05:29,135 - __main__ - INFO - Fold 3 - Validation indices = [0, 5, 11, 12]
+2024-12-03 16:05:29,137 - __main__ - INFO - Accuracy = 0.5154004106776181
+2024-12-03 16:05:32,995 - __main__ - INFO - Fold 4 - Validation indices = [0, 2, 5, 11]
+2024-12-03 16:05:32,999 - __main__ - INFO - Accuracy = 0.4807692307692308
+2024-12-03 16:06:17,274 - __main__ - INFO - 
+
+Using Classifier LogisticRegression()
+2024-12-03 16:06:20,169 - __main__ - INFO - Fold 0 - Validation indices = [0, 1, 12, 19]
+2024-12-03 16:06:20,170 - __main__ - INFO - Accuracy = 0.5934291581108829
+2024-12-03 16:06:22,978 - __main__ - INFO - Fold 1 - Validation indices = [1, 5, 12, 13]
+2024-12-03 16:06:22,984 - __main__ - INFO - Accuracy = 0.5811088295687885
+2024-12-03 16:06:26,018 - __main__ - INFO - Fold 2 - Validation indices = [11, 12, 13, 19]
+2024-12-03 16:06:26,020 - __main__ - INFO - Accuracy = 0.5934291581108829
+2024-12-03 16:06:29,650 - __main__ - INFO - Fold 3 - Validation indices = [1, 13, 18, 19]
+2024-12-03 16:06:29,655 - __main__ - INFO - Accuracy = 0.5596153846153846
+2024-12-03 16:06:32,314 - __main__ - INFO - 
+
+Using Classifier LogisticRegression()
+2024-12-03 16:06:35,299 - __main__ - INFO - Fold 0 - Validation indices = [0, 7, 11, 13]
+2024-12-03 16:06:35,301 - __main__ - INFO - Accuracy = 0.5615384615384615
+2024-12-03 16:06:38,132 - __main__ - INFO - Fold 1 - Validation indices = [1, 11, 13, 18]
+2024-12-03 16:06:38,134 - __main__ - INFO - Accuracy = 0.5288461538461539
+2024-12-03 16:06:40,992 - __main__ - INFO - Fold 2 - Validation indices = [2, 11, 12, 13]
+2024-12-03 16:06:40,993 - __main__ - INFO - Accuracy = 0.5626283367556468
+2024-12-03 16:06:44,367 - __main__ - INFO - Fold 3 - Validation indices = [11, 12, 13, 18]
+2024-12-03 16:06:44,369 - __main__ - INFO - Accuracy = 0.5195071868583162
+2024-12-03 16:06:47,791 - __main__ - INFO - Fold 4 - Validation indices = [2, 5, 18, 19]
+2024-12-03 16:06:47,793 - __main__ - INFO - Accuracy = 0.6115384615384616
+2024-12-03 16:06:50,967 - __main__ - INFO - Fold 5 - Validation indices = [0, 1, 2, 12]
+2024-12-03 16:06:50,969 - __main__ - INFO - Accuracy = 0.5913757700205339
+2024-12-03 16:06:53,300 - __main__ - INFO - Fold 6 - Validation indices = [5, 7, 12, 19]
+2024-12-03 16:06:53,302 - __main__ - INFO - Accuracy = 0.6036960985626283
+2024-12-03 16:06:55,449 - __main__ - INFO - Fold 7 - Validation indices = [1, 2, 11, 18]
+2024-12-03 16:06:55,451 - __main__ - INFO - Accuracy = 0.5692307692307692
+2024-12-03 16:06:57,628 - __main__ - INFO - Fold 8 - Validation indices = [5, 13, 18, 19]
+2024-12-03 16:06:57,631 - __main__ - INFO - Accuracy = 0.5596153846153846
+2024-12-03 16:07:00,103 - __main__ - INFO - Fold 9 - Validation indices = [0, 1, 7, 11]
+2024-12-03 16:07:00,105 - __main__ - INFO - Accuracy = 0.5576923076923077
+2024-12-03 16:07:00,109 - __main__ - INFO - Mean Accuracy for LogisticRegression():  0.5665668930658663
+2024-12-03 16:07:00,110 - __main__ - INFO - 
+
+Using Classifier RandomForestClassifier()
+2024-12-03 16:07:02,844 - __main__ - INFO - Fold 0 - Validation indices = [0, 7, 11, 13]
+2024-12-03 16:07:02,847 - __main__ - INFO - Accuracy = 0.5557692307692308
+2024-12-03 16:07:06,566 - __main__ - INFO - Fold 1 - Validation indices = [1, 11, 13, 18]
+2024-12-03 16:07:06,569 - __main__ - INFO - Accuracy = 0.575
+2024-12-03 16:07:10,286 - __main__ - INFO - Fold 2 - Validation indices = [2, 11, 12, 13]
+2024-12-03 16:07:10,287 - __main__ - INFO - Accuracy = 0.5338809034907598
+2024-12-03 16:07:13,672 - __main__ - INFO - Fold 3 - Validation indices = [11, 12, 13, 18]
+2024-12-03 16:07:13,674 - __main__ - INFO - Accuracy = 0.5318275154004107
+2024-12-03 16:07:16,920 - __main__ - INFO - Fold 4 - Validation indices = [2, 5, 18, 19]
+2024-12-03 16:07:16,921 - __main__ - INFO - Accuracy = 0.5942307692307692
+2024-12-03 16:07:20,056 - __main__ - INFO - Fold 5 - Validation indices = [0, 1, 2, 12]
+2024-12-03 16:07:20,057 - __main__ - INFO - Accuracy = 0.5236139630390144
+2024-12-03 16:07:23,394 - __main__ - INFO - Fold 6 - Validation indices = [5, 7, 12, 19]
+2024-12-03 16:07:23,399 - __main__ - INFO - Accuracy = 0.5441478439425051
+2024-12-03 16:07:26,917 - __main__ - INFO - Fold 7 - Validation indices = [1, 2, 11, 18]
+2024-12-03 16:07:26,919 - __main__ - INFO - Accuracy = 0.5692307692307692
+2024-12-03 16:07:30,330 - __main__ - INFO - Fold 8 - Validation indices = [5, 13, 18, 19]
+2024-12-03 16:07:30,333 - __main__ - INFO - Accuracy = 0.5923076923076923
+2024-12-03 16:07:33,553 - __main__ - INFO - Fold 9 - Validation indices = [0, 1, 7, 11]
+2024-12-03 16:07:33,555 - __main__ - INFO - Accuracy = 0.5423076923076923
+2024-12-03 16:07:33,558 - __main__ - INFO - Mean Accuracy for RandomForestClassifier():  0.5562316379718844
+2024-12-03 16:07:33,559 - __main__ - INFO - 
+
+Using Classifier RandomForestClassifier(max_depth=5)
+2024-12-03 16:07:38,339 - __main__ - INFO - Fold 0 - Validation indices = [0, 7, 11, 13]
+2024-12-03 16:07:38,341 - __main__ - INFO - Accuracy = 0.5461538461538461
+2024-12-03 16:07:41,434 - __main__ - INFO - Fold 1 - Validation indices = [1, 11, 13, 18]
+2024-12-03 16:07:41,436 - __main__ - INFO - Accuracy = 0.5576923076923077
+2024-12-03 16:07:45,173 - __main__ - INFO - Fold 2 - Validation indices = [2, 11, 12, 13]
+2024-12-03 16:07:45,175 - __main__ - INFO - Accuracy = 0.5790554414784395
+2024-12-03 16:07:49,528 - __main__ - INFO - Fold 3 - Validation indices = [11, 12, 13, 18]
+2024-12-03 16:07:49,530 - __main__ - INFO - Accuracy = 0.5420944558521561
+2024-12-03 16:07:52,466 - __main__ - INFO - Fold 4 - Validation indices = [2, 5, 18, 19]
+2024-12-03 16:07:52,469 - __main__ - INFO - Accuracy = 0.6076923076923076
+2024-12-03 16:07:55,387 - __main__ - INFO - Fold 5 - Validation indices = [0, 1, 2, 12]
+2024-12-03 16:07:55,389 - __main__ - INFO - Accuracy = 0.5256673511293635
+2024-12-03 16:07:58,305 - __main__ - INFO - Fold 6 - Validation indices = [5, 7, 12, 19]
+2024-12-03 16:07:58,307 - __main__ - INFO - Accuracy = 0.5462012320328542
+2024-12-03 16:08:01,350 - __main__ - INFO - Fold 7 - Validation indices = [1, 2, 11, 18]
+2024-12-03 16:08:01,352 - __main__ - INFO - Accuracy = 0.5538461538461539
+2024-12-03 16:08:04,493 - __main__ - INFO - Fold 8 - Validation indices = [5, 13, 18, 19]
+2024-12-03 16:08:04,495 - __main__ - INFO - Accuracy = 0.5980769230769231
+2024-12-03 16:08:07,590 - __main__ - INFO - Fold 9 - Validation indices = [0, 1, 7, 11]
+2024-12-03 16:08:07,592 - __main__ - INFO - Accuracy = 0.5173076923076924
+2024-12-03 16:08:07,595 - __main__ - INFO - Mean Accuracy for RandomForestClassifier(max_depth=5):  0.5573787711262045
+2024-12-03 16:08:07,596 - __main__ - INFO - 
+
+Using Classifier DecisionTreeClassifier()
+2024-12-03 16:08:10,382 - __main__ - INFO - Fold 0 - Validation indices = [0, 7, 11, 13]
+2024-12-03 16:08:10,383 - __main__ - INFO - Accuracy = 0.5307692307692308
+2024-12-03 16:08:13,284 - __main__ - INFO - Fold 1 - Validation indices = [1, 11, 13, 18]
+2024-12-03 16:08:13,287 - __main__ - INFO - Accuracy = 0.5403846153846154
+2024-12-03 16:08:16,226 - __main__ - INFO - Fold 2 - Validation indices = [2, 11, 12, 13]
+2024-12-03 16:08:16,228 - __main__ - INFO - Accuracy = 0.4928131416837782
+2024-12-03 16:08:18,955 - __main__ - INFO - Fold 3 - Validation indices = [11, 12, 13, 18]
+2024-12-03 16:08:18,956 - __main__ - INFO - Accuracy = 0.5277207392197125
+2024-12-03 16:08:21,855 - __main__ - INFO - Fold 4 - Validation indices = [2, 5, 18, 19]
+2024-12-03 16:08:21,857 - __main__ - INFO - Accuracy = 0.5307692307692308
+2024-12-03 16:08:24,689 - __main__ - INFO - Fold 5 - Validation indices = [0, 1, 2, 12]
+2024-12-03 16:08:24,690 - __main__ - INFO - Accuracy = 0.5256673511293635
+2024-12-03 16:08:27,381 - __main__ - INFO - Fold 6 - Validation indices = [5, 7, 12, 19]
+2024-12-03 16:08:27,383 - __main__ - INFO - Accuracy = 0.5277207392197125
+2024-12-03 16:08:30,155 - __main__ - INFO - Fold 7 - Validation indices = [1, 2, 11, 18]
+2024-12-03 16:08:30,158 - __main__ - INFO - Accuracy = 0.5173076923076924
+2024-12-03 16:08:33,146 - __main__ - INFO - Fold 8 - Validation indices = [5, 13, 18, 19]
+2024-12-03 16:08:33,149 - __main__ - INFO - Accuracy = 0.5
+2024-12-03 16:08:37,460 - __main__ - INFO - Fold 9 - Validation indices = [0, 1, 7, 11]
+2024-12-03 16:08:37,465 - __main__ - INFO - Accuracy = 0.49230769230769234
+2024-12-03 16:08:37,473 - __main__ - INFO - Mean Accuracy for DecisionTreeClassifier():  0.5185460432791029
+2024-12-03 16:08:37,475 - __main__ - INFO - 
+
+Using Classifier MLPClassifier()
+2024-12-03 16:08:45,891 - __main__ - INFO - Fold 0 - Validation indices = [0, 7, 11, 13]
+2024-12-03 16:08:45,894 - __main__ - INFO - Accuracy = 0.5423076923076923
+2024-12-03 16:08:49,982 - __main__ - INFO - Fold 1 - Validation indices = [1, 11, 13, 18]
+2024-12-03 16:08:49,984 - __main__ - INFO - Accuracy = 0.5653846153846154
+2024-12-03 16:08:54,326 - __main__ - INFO - Fold 2 - Validation indices = [2, 11, 12, 13]
+2024-12-03 16:08:54,328 - __main__ - INFO - Accuracy = 0.5708418891170431
+2024-12-03 16:09:00,776 - __main__ - INFO - Fold 3 - Validation indices = [11, 12, 13, 18]
+2024-12-03 16:09:00,779 - __main__ - INFO - Accuracy = 0.5133470225872689
+2024-12-03 16:09:07,977 - __main__ - INFO - Fold 4 - Validation indices = [2, 5, 18, 19]
+2024-12-03 16:09:07,991 - __main__ - INFO - Accuracy = 0.55
+2024-12-03 16:09:14,453 - __main__ - INFO - Fold 5 - Validation indices = [0, 1, 2, 12]
+2024-12-03 16:09:14,458 - __main__ - INFO - Accuracy = 0.5646817248459959
+2024-12-03 16:09:32,783 - __main__ - INFO - 
+
+Using Classifier LogisticRegression()
+2024-12-03 16:09:35,867 - __main__ - INFO - Fold 0 - Validation indices = [1, 5, 12, 18]
+2024-12-03 16:09:35,868 - __main__ - INFO - Accuracy = 0.5400410677618069
+2024-12-03 16:09:38,650 - __main__ - INFO - Fold 1 - Validation indices = [1, 2, 7, 19]
+2024-12-03 16:09:38,652 - __main__ - INFO - Accuracy = 0.6096153846153847
+2024-12-03 16:09:41,365 - __main__ - INFO - Fold 2 - Validation indices = [0, 5, 18, 19]
+2024-12-03 16:09:41,367 - __main__ - INFO - Accuracy = 0.5788461538461539
+2024-12-03 16:09:44,112 - __main__ - INFO - Fold 3 - Validation indices = [7, 11, 12, 19]
+2024-12-03 16:09:44,116 - __main__ - INFO - Accuracy = 0.5441478439425051
+2024-12-03 16:09:46,720 - __main__ - INFO - Fold 4 - Validation indices = [2, 5, 12, 13]
+2024-12-03 16:09:46,722 - __main__ - INFO - Accuracy = 0.6283367556468172
+2024-12-03 16:09:49,396 - __main__ - INFO - Fold 5 - Validation indices = [0, 2, 11, 18]
+2024-12-03 16:09:49,398 - __main__ - INFO - Accuracy = 0.5480769230769231
+2024-12-03 16:09:52,132 - __main__ - INFO - Fold 6 - Validation indices = [0, 1, 2, 7]
+2024-12-03 16:09:52,134 - __main__ - INFO - Accuracy = 0.5634615384615385
+2024-12-03 16:09:54,719 - __main__ - INFO - Fold 7 - Validation indices = [7, 12, 13, 18]
+2024-12-03 16:09:54,721 - __main__ - INFO - Accuracy = 0.5441478439425051
+2024-12-03 16:09:57,953 - __main__ - INFO - Fold 8 - Validation indices = [7, 12, 18, 19]
+2024-12-03 16:09:57,957 - __main__ - INFO - Accuracy = 0.5482546201232033
+2024-12-03 16:10:01,098 - __main__ - INFO - Fold 9 - Validation indices = [0, 2, 7, 12]
+2024-12-03 16:10:01,101 - __main__ - INFO - Accuracy = 0.5687885010266941
+2024-12-03 16:10:01,107 - __main__ - INFO - Mean Accuracy for LogisticRegression():  0.5673716632443533
+2024-12-03 16:10:01,109 - __main__ - INFO - 
+
+Using Classifier RandomForestClassifier()
+2024-12-03 16:10:03,985 - __main__ - INFO - Fold 0 - Validation indices = [1, 5, 12, 18]
+2024-12-03 16:10:03,987 - __main__ - INFO - Accuracy = 0.62217659137577
+2024-12-03 16:10:07,646 - __main__ - INFO - Fold 1 - Validation indices = [1, 2, 7, 19]
+2024-12-03 16:10:07,648 - __main__ - INFO - Accuracy = 0.5826923076923077
+2024-12-03 16:10:11,264 - __main__ - INFO - Fold 2 - Validation indices = [0, 5, 18, 19]
+2024-12-03 16:10:11,266 - __main__ - INFO - Accuracy = 0.6115384615384616
+2024-12-03 16:10:14,853 - __main__ - INFO - Fold 3 - Validation indices = [7, 11, 12, 19]
+2024-12-03 16:10:14,856 - __main__ - INFO - Accuracy = 0.6139630390143738
+2024-12-03 16:10:18,838 - __main__ - INFO - Fold 4 - Validation indices = [2, 5, 12, 13]
+2024-12-03 16:10:18,839 - __main__ - INFO - Accuracy = 0.6057494866529775
+2024-12-03 16:10:21,975 - __main__ - INFO - Fold 5 - Validation indices = [0, 2, 11, 18]
+2024-12-03 16:10:21,977 - __main__ - INFO - Accuracy = 0.5653846153846154
+2024-12-03 16:10:25,058 - __main__ - INFO - Fold 6 - Validation indices = [0, 1, 2, 7]
+2024-12-03 16:10:25,060 - __main__ - INFO - Accuracy = 0.5615384615384615
+2024-12-03 16:10:28,410 - __main__ - INFO - Fold 7 - Validation indices = [7, 12, 13, 18]
+2024-12-03 16:10:28,412 - __main__ - INFO - Accuracy = 0.6447638603696099
+2024-12-03 16:10:31,724 - __main__ - INFO - Fold 8 - Validation indices = [7, 12, 18, 19]
+2024-12-03 16:10:31,725 - __main__ - INFO - Accuracy = 0.6262833675564682
+2024-12-03 16:10:35,004 - __main__ - INFO - Fold 9 - Validation indices = [0, 2, 7, 12]
+2024-12-03 16:10:35,006 - __main__ - INFO - Accuracy = 0.49075975359342916
+2024-12-03 16:10:35,010 - __main__ - INFO - Mean Accuracy for RandomForestClassifier():  0.5924849944716475
+2024-12-03 16:10:35,011 - __main__ - INFO - 
+
+Using Classifier RandomForestClassifier(max_depth=5)
+2024-12-03 16:10:38,362 - __main__ - INFO - Fold 0 - Validation indices = [1, 5, 12, 18]
+2024-12-03 16:10:38,364 - __main__ - INFO - Accuracy = 0.5852156057494866
+2024-12-03 16:10:42,279 - __main__ - INFO - Fold 1 - Validation indices = [1, 2, 7, 19]
+2024-12-03 16:10:42,281 - __main__ - INFO - Accuracy = 0.5692307692307692
+2024-12-03 16:10:45,477 - __main__ - INFO - Fold 2 - Validation indices = [0, 5, 18, 19]
+2024-12-03 16:10:45,479 - __main__ - INFO - Accuracy = 0.5884615384615385
+2024-12-03 16:10:48,426 - __main__ - INFO - Fold 3 - Validation indices = [7, 11, 12, 19]
+2024-12-03 16:10:48,427 - __main__ - INFO - Accuracy = 0.5872689938398358
+2024-12-03 16:10:51,375 - __main__ - INFO - Fold 4 - Validation indices = [2, 5, 12, 13]
+2024-12-03 16:10:51,377 - __main__ - INFO - Accuracy = 0.6303901437371663
+2024-12-03 16:10:54,938 - __main__ - INFO - Fold 5 - Validation indices = [0, 2, 11, 18]
+2024-12-03 16:10:54,939 - __main__ - INFO - Accuracy = 0.5673076923076923
+2024-12-03 16:10:58,440 - __main__ - INFO - Fold 6 - Validation indices = [0, 1, 2, 7]
+2024-12-03 16:10:58,442 - __main__ - INFO - Accuracy = 0.5692307692307692
+2024-12-03 16:11:01,603 - __main__ - INFO - Fold 7 - Validation indices = [7, 12, 13, 18]
+2024-12-03 16:11:01,604 - __main__ - INFO - Accuracy = 0.5995893223819302
+2024-12-03 16:11:04,049 - __main__ - INFO - Fold 8 - Validation indices = [7, 12, 18, 19]
+2024-12-03 16:11:04,052 - __main__ - INFO - Accuracy = 0.5687885010266941
+2024-12-03 16:11:06,478 - __main__ - INFO - Fold 9 - Validation indices = [0, 2, 7, 12]
+2024-12-03 16:11:06,479 - __main__ - INFO - Accuracy = 0.5420944558521561
+2024-12-03 16:11:06,482 - __main__ - INFO - Mean Accuracy for RandomForestClassifier(max_depth=5):  0.5807577791818039
+2024-12-03 16:11:06,483 - __main__ - INFO - 
+
+Using Classifier DecisionTreeClassifier()
+2024-12-03 16:11:08,617 - __main__ - INFO - Fold 0 - Validation indices = [1, 5, 12, 18]
+2024-12-03 16:11:08,618 - __main__ - INFO - Accuracy = 0.5215605749486653
+2024-12-03 16:11:10,997 - __main__ - INFO - Fold 1 - Validation indices = [1, 2, 7, 19]
+2024-12-03 16:11:10,998 - __main__ - INFO - Accuracy = 0.48653846153846153
+2024-12-03 16:11:13,142 - __main__ - INFO - Fold 2 - Validation indices = [0, 5, 18, 19]
+2024-12-03 16:11:13,143 - __main__ - INFO - Accuracy = 0.5326923076923077
+2024-12-03 16:11:15,486 - __main__ - INFO - Fold 3 - Validation indices = [7, 11, 12, 19]
+2024-12-03 16:11:15,488 - __main__ - INFO - Accuracy = 0.5462012320328542
+2024-12-03 16:11:19,012 - __main__ - INFO - Fold 4 - Validation indices = [2, 5, 12, 13]
+2024-12-03 16:11:19,013 - __main__ - INFO - Accuracy = 0.4989733059548255
+2024-12-03 16:11:21,608 - __main__ - INFO - Fold 5 - Validation indices = [0, 2, 11, 18]
+2024-12-03 16:11:21,610 - __main__ - INFO - Accuracy = 0.49615384615384617
+2024-12-03 16:11:23,921 - __main__ - INFO - Fold 6 - Validation indices = [0, 1, 2, 7]
+2024-12-03 16:11:23,922 - __main__ - INFO - Accuracy = 0.4826923076923077
+2024-12-03 16:11:26,216 - __main__ - INFO - Fold 7 - Validation indices = [7, 12, 13, 18]
+2024-12-03 16:11:26,218 - __main__ - INFO - Accuracy = 0.5215605749486653
+2024-12-03 16:11:29,062 - __main__ - INFO - Fold 8 - Validation indices = [7, 12, 18, 19]
+2024-12-03 16:11:29,063 - __main__ - INFO - Accuracy = 0.5770020533880903
+2024-12-03 16:11:31,498 - __main__ - INFO - Fold 9 - Validation indices = [0, 2, 7, 12]
+2024-12-03 16:11:31,499 - __main__ - INFO - Accuracy = 0.4537987679671458
+2024-12-03 16:11:31,502 - __main__ - INFO - Mean Accuracy for DecisionTreeClassifier():  0.5117173432317169
+2024-12-03 16:11:31,503 - __main__ - INFO - 
+
+Using Classifier MLPClassifier()
+2024-12-03 16:11:37,975 - __main__ - INFO - Fold 0 - Validation indices = [1, 5, 12, 18]
+2024-12-03 16:11:37,980 - __main__ - INFO - Accuracy = 0.43737166324435317
+2024-12-03 16:11:43,910 - __main__ - INFO - Fold 1 - Validation indices = [1, 2, 7, 19]
+2024-12-03 16:11:43,912 - __main__ - INFO - Accuracy = 0.5596153846153846
+2024-12-03 16:11:49,113 - __main__ - INFO - Fold 2 - Validation indices = [0, 5, 18, 19]
+2024-12-03 16:11:49,116 - __main__ - INFO - Accuracy = 0.5538461538461539
+2024-12-03 16:11:54,206 - __main__ - INFO - Fold 3 - Validation indices = [7, 11, 12, 19]
+2024-12-03 16:11:54,209 - __main__ - INFO - Accuracy = 0.5030800821355236
+2024-12-03 16:11:59,511 - __main__ - INFO - Fold 4 - Validation indices = [2, 5, 12, 13]
+2024-12-03 16:11:59,514 - __main__ - INFO - Accuracy = 0.5934291581108829
+2024-12-03 16:12:05,691 - __main__ - INFO - Fold 5 - Validation indices = [0, 2, 11, 18]
+2024-12-03 16:12:05,693 - __main__ - INFO - Accuracy = 0.49230769230769234
+2024-12-03 16:12:10,925 - __main__ - INFO - Fold 6 - Validation indices = [0, 1, 2, 7]
+2024-12-03 16:12:10,928 - __main__ - INFO - Accuracy = 0.5307692307692308
+2024-12-03 16:12:16,289 - __main__ - INFO - Fold 7 - Validation indices = [7, 12, 13, 18]
+2024-12-03 16:12:16,292 - __main__ - INFO - Accuracy = 0.5154004106776181
+2024-12-03 16:12:22,328 - __main__ - INFO - Fold 8 - Validation indices = [7, 12, 18, 19]
+2024-12-03 16:12:22,340 - __main__ - INFO - Accuracy = 0.5051334702258727
+2024-12-03 16:12:29,405 - __main__ - INFO - Fold 9 - Validation indices = [0, 2, 7, 12]
+2024-12-03 16:12:29,408 - __main__ - INFO - Accuracy = 0.5174537987679672
+2024-12-03 16:12:29,415 - __main__ - INFO - Mean Accuracy for MLPClassifier():  0.520840704470068

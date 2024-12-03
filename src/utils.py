@@ -33,7 +33,7 @@ def train_test_split(preprocess = True):
 
     return train_df, test_df
 
-def get_eval_set():
+def get_eval_set(preprocess : bool = True):
     all_dfs = []
 
     for file in tqdm(os.listdir(BASE_PATH_TEST)):
@@ -41,6 +41,11 @@ def get_eval_set():
         all_dfs.append(pd.read_csv(file_path))
 
     all_df = pd.concat(all_dfs)
+
+    if preprocess:
+        all_df = preprocess_data(all_df)
+        
+
 
     return all_df
 
@@ -145,22 +150,22 @@ def get_first_texts(x, max_size = 100, num_texts = 50):
     return "\n".join(x[mask].iloc[0:num_texts])
     # return x[mask].tolist()
 
-def aggregate_samples(df, indices, max_size : int = 100):
+def aggregate_samples(df, indices, max_tweet_size : int = 100, tweet_col : str = "Tweet"):
     all_df = []
-
+    
    
     return (df.query(f"MatchID in {indices}")).groupby(["MatchID", "PeriodID"]).agg({
-        "Tweet":    lambda x: get_first_texts(x, max_size),
+        tweet_col:    lambda x: get_first_texts(x, max_tweet_size),
         "EventType": np.mean,
         "ID": len
     })
 
-def remove_hashtag_links(df):
+def remove_hashtag_links(df, tweet_col = 'Tweet'):
 
-    df['Tweet'] = df['Tweet'].str.replace(r"#\w+", "", regex=True)
+    df[tweet_col] = df[tweet_col].str.replace(r"#\w+", "", regex=True)
 
     # Remove links
-    df['Tweet'] = df['Tweet'].str.replace(r"http\S+|www\S+", "", regex=True)
+    df[tweet_col] = df[tweet_col].str.replace(r"http\S+|www\S+", "", regex=True)
 
     emoji_pattern = re.compile(
         "["
@@ -178,8 +183,8 @@ def remove_hashtag_links(df):
         "]+",
         flags=re.UNICODE
     )
-    df['Tweet'] = df['Tweet'].str.replace(emoji_pattern, "", regex=True)
-    df['Tweet'] = df['Tweet'].str.strip()
+    df[tweet_col] = df[tweet_col].str.replace(emoji_pattern, "", regex=True)
+    df[tweet_col] = df[tweet_col].str.strip()
 
     # df['Tweet'] = "Is there any event like goal, halftime, fulltime, start of match or cards in any of the following tweets?\n\n" + df['Tweet']
 
