@@ -131,7 +131,7 @@ def evaluate_model(
         print(conf_matrix)
 
     if return_proba:
-        return all_preds, all_labels, probas
+        return all_preds, all_labels, all_probas
     return all_preds, all_labels
 
 
