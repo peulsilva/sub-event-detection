@@ -44,6 +44,12 @@ The dataset underwent a series of preprocessing steps to ensure its utility for 
 
 ## Code Structure
 
+To install the dependencies, run
+
+```bash
+pip install -r requirements.txt
+```
+
 - **`src/`:** Contains Python modules for data processing and modeling.
 - **`notebooks/`:** Includes experiments and results.
 - **`scripts/`:** Python scripts for executing tasks.
